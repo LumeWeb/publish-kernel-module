@@ -13,7 +13,7 @@
     },
     "readme": "ERROR: No README data found!",
     "scripts": {
-        "prepare": "presetter bootstrap",
+        "prepare": "bash -c 'if command -v presetter &> /dev/null; then presetter bootstrap; fi'",
         "build": "run build",
         "semantic-release": "semantic-release"
     },
