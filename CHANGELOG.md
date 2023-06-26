@@ -1,3 +1,5 @@
+# [0.1.0-develop.4](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.3...v0.1.0-develop.4) (2023-06-26)
+
 # [0.1.0-develop.3](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.2...v0.1.0-develop.3) (2023-06-26)
 
 
