@@ -12,7 +12,7 @@ import {
 } from "@lumeweb/libweb";
 import chalk from "chalk";
 import * as util from "util";
-import { fileExists } from "#util.js";
+import { fileExists } from "#utils.js";
 
 let key = process.env.PORTAL_PRIVATE_KEY;
 
