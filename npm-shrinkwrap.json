@@ -1787,7 +1787,7 @@
         },
         "node_modules/@lumeweb/node-library-preset": {
             "version": "0.1.0",
-            "resolved": "git+https://git.lumeweb.com/LumeWeb/node-library-preset.git#58eb09052222ae50569305b373e0bea9282e67d8",
+            "resolved": "git+https://git.lumeweb.com/LumeWeb/node-library-preset.git#05b030c9ca15eb17e72080ad03f71f7203429187",
             "dependencies": {
                 "@semantic-release/changelog": "^6.0.3",
                 "@semantic-release/git": "^10.0.1",
@@ -16941,7 +16941,8 @@
         "node_modules/text-table": {
             "version": "0.2.0",
             "resolved": "https://registry.npmjs.org/text-table/-/text-table-0.2.0.tgz",
-            "integrity": "sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw=="
+            "integrity": "sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==",
+            "peer": true
         },
         "node_modules/through": {
             "version": "2.3.8",
@@ -18020,6 +18021,7 @@
             "version": "4.0.2",
             "resolved": "https://registry.npmjs.org/write-file-atomic/-/write-file-atomic-4.0.2.tgz",
             "integrity": "sha512-7KxauUdBmSdWnmpaGFg+ppNjKF8uNLry8LyzjauQDOVONfFLNKrKvQOxZ/VuTIcS/gge/YNahf5RIIQWTSarlg==",
+            "peer": true,
             "dependencies": {
                 "imurmurhash": "^0.1.4",
                 "signal-exit": "^3.0.7"
