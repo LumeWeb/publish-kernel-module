@@ -1,0 +1,35 @@
+{
+    "name": "@lumeweb/publish-kernel-module",
+    "version": "0.1.0",
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "gitea@git.lumeweb.com:LumeWeb/publish-kernel-module.git"
+    },
+    "devDependencies": {
+        "@lumeweb/node-library-preset": "git+https://git.lumeweb.com/LumeWeb/node-library-preset.git",
+        "@types/prompts": "^2.4.4",
+        "presetter": "*"
+    },
+    "readme": "ERROR: No README data found!",
+    "_id": "@lumeweb/publish-kernel-module@0.1.0",
+    "scripts": {
+        "prepare": "presetter bootstrap",
+        "build": "run build",
+        "semantic-release": "semantic-release"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "files": [
+        "lib/**"
+    ],
+    "dependencies": {
+        "@lumeweb/community-portals": "^0.1.0-develop.4",
+        "@lumeweb/libportal": "^0.2.0-develop.9",
+        "@lumeweb/libweb": "^0.2.0-develop.19",
+        "chalk": "^5.2.0",
+        "prompts": "^2.4.2"
+    },
+    "bin": "./lib/index.js"
+}
