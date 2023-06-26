@@ -8,7 +8,7 @@
             "name": "@lumeweb/publish-kernel-module",
             "version": "0.1.0-develop.3",
             "dependencies": {
-                "@lumeweb/community-portals": "^0.1.0-develop.4",
+                "@lumeweb/community-portals": "^0.1.0-develop.5",
                 "@lumeweb/libportal": "^0.2.0-develop.11",
                 "@lumeweb/libweb": "^0.2.0-develop.19",
                 "chalk": "^5.2.0",
@@ -1901,11 +1901,11 @@
             "peer": true
         },
         "node_modules/@lumeweb/community-portals": {
-            "version": "0.1.0-develop.4",
-            "resolved": "https://registry.npmjs.org/@lumeweb/community-portals/-/community-portals-0.1.0-develop.4.tgz",
-            "integrity": "sha512-3fphM9wKOOQ5KU/VZsOmr+VbMb9ZkXfjp/v3JhJ/m8RT/H1ggo70SrwH2dpRDdr1xWyMFqXlhWGDCyL8k8D7dg==",
+            "version": "0.1.0-develop.5",
+            "resolved": "https://registry.npmjs.org/@lumeweb/community-portals/-/community-portals-0.1.0-develop.5.tgz",
+            "integrity": "sha512-DQ/7LmmnQQk184LZj60uqOB03eI3VNdtItIkjBMmhh/BX5nhXhmHyLfFhNca0C6pmPjr6cgEeA5siNdQXh9DPQ==",
             "peerDependencies": {
-                "@lumeweb/libweb": "^0.2.0-develop.17"
+                "@lumeweb/libweb": "^0.2.0-develop.19"
             }
         },
         "node_modules/@lumeweb/libportal": {
