@@ -25,7 +25,7 @@
     ],
     "dependencies": {
         "@lumeweb/community-portals": "^0.1.0-develop.4",
-        "@lumeweb/libportal": "^0.2.0-develop.9",
+        "@lumeweb/libportal": "^0.2.0-develop.11",
         "@lumeweb/libweb": "^0.2.0-develop.19",
         "chalk": "^5.2.0",
         "prompts": "^2.4.2"
