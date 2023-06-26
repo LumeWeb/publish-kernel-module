@@ -1,6 +1,6 @@
 {
     "name": "@lumeweb/publish-kernel-module",
-    "version": "0.1.0",
+    "version": "0.1.0-develop.1",
     "type": "module",
     "repository": {
         "type": "git",
@@ -12,7 +12,6 @@
         "presetter": "*"
     },
     "readme": "ERROR: No README data found!",
-    "_id": "@lumeweb/publish-kernel-module@0.1.0",
     "scripts": {
         "prepare": "presetter bootstrap",
         "build": "run build",
