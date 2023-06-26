@@ -1,12 +1,12 @@
 {
     "name": "@lumeweb/publish-kernel-module",
-    "version": "0.1.0-develop.5",
+    "version": "0.1.0-develop.6",
     "lockfileVersion": 3,
     "requires": true,
     "packages": {
         "": {
             "name": "@lumeweb/publish-kernel-module",
-            "version": "0.1.0-develop.5",
+            "version": "0.1.0-develop.6",
             "dependencies": {
                 "@lumeweb/community-portals": "0.1.0-develop.5",
                 "@lumeweb/libportal": "0.2.0-develop.11",

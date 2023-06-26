@@ -1,3 +1,10 @@
+# [0.1.0-develop.6](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.5...v0.1.0-develop.6) (2023-06-26)
+
+
+### Bug Fixes
+
+* fix util import ([ab820fe](https://git.lumeweb.com/LumeWeb/publish-kernel-module/commit/ab820fe346e4364722d22d83fadaed65d329e3b2))
+
 # [0.1.0-develop.5](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.4...v0.1.0-develop.5) (2023-06-26)
 
 # [0.1.0-develop.4](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.3...v0.1.0-develop.4) (2023-06-26)
