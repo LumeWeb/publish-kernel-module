@@ -25,7 +25,7 @@ if (!key) {
   });
 }
 
-let file = process.env.KERNEL_FILE;
+let file = process.env.MODULE_FILE;
 
 if (!file || !(await fileExists(file))) {
   const cwd = process.cwd();
