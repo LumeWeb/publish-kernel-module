@@ -8,9 +8,7 @@
             "name": "@lumeweb/publish-kernel-module",
             "version": "0.1.0-develop.6",
             "dependencies": {
-                "@lumeweb/community-portals": "0.1.0-develop.5",
-                "@lumeweb/libportal": "0.2.0-develop.11",
-                "@lumeweb/libweb": "0.2.0-develop.19",
+                "@lumeweb/libweb": "0.2.0-develop.20",
                 "chalk": "^5.2.0",
                 "prompts": "^2.4.2"
             },
@@ -1901,9 +1899,9 @@
             "peer": true
         },
         "node_modules/@lumeweb/community-portals": {
-            "version": "0.1.0-develop.5",
-            "resolved": "https://registry.npmjs.org/@lumeweb/community-portals/-/community-portals-0.1.0-develop.5.tgz",
-            "integrity": "sha512-DQ/7LmmnQQk184LZj60uqOB03eI3VNdtItIkjBMmhh/BX5nhXhmHyLfFhNca0C6pmPjr6cgEeA5siNdQXh9DPQ==",
+            "version": "0.1.0-develop.6",
+            "resolved": "https://registry.npmjs.org/@lumeweb/community-portals/-/community-portals-0.1.0-develop.6.tgz",
+            "integrity": "sha512-3LbHjMH9DHS/tekxFdNm8VRttNe9SXN97TfaMGuXx1LbPH8CqLLknefTWp8EcOQCCC5JKRoQUevksTjtDZrTUQ==",
             "peerDependencies": {
                 "@lumeweb/libweb": "^0.2.0-develop.19"
             }
@@ -1926,11 +1924,11 @@
             }
         },
         "node_modules/@lumeweb/libweb": {
-            "version": "0.2.0-develop.19",
-            "resolved": "https://registry.npmjs.org/@lumeweb/libweb/-/libweb-0.2.0-develop.19.tgz",
-            "integrity": "sha512-AurzfCeUwqPbF98bNrwUjrXmAPSW+9ZfUEhaBn3/5JDXAO8QNb9ji+yTBmZmWc5GNWTQeBufbHY1Sjo6M17vkw==",
+            "version": "0.2.0-develop.20",
+            "resolved": "https://registry.npmjs.org/@lumeweb/libweb/-/libweb-0.2.0-develop.20.tgz",
+            "integrity": "sha512-oi6kx8QUY6sPQqwh+WvuLPbvzSQhL3QHIerSyFcvn/kPHt3sjF00atTm0uc5BLXMLn3kpZ4nmUnOylk2anhAmQ==",
             "dependencies": {
-                "@lumeweb/community-portals": "^0.1.0-develop.4",
+                "@lumeweb/community-portals": "^0.1.0-develop.6",
                 "@lumeweb/libportal": "^0.2.0-develop.10",
                 "@lumeweb/node-library-preset": "git+https://git.lumeweb.com/LumeWeb/node-library-preset.git",
                 "@noble/curves": "^1.1.0",
