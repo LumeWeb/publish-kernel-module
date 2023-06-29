@@ -7,7 +7,7 @@
         "url": "gitea@git.lumeweb.com:LumeWeb/publish-kernel-module.git"
     },
     "devDependencies": {
-        "@lumeweb/node-library-preset": "git+https://git.lumeweb.com/LumeWeb/node-library-preset.git",
+        "@lumeweb/node-library-preset": "^0.2.6",
         "@types/prompts": "^2.4.4",
         "presetter": "*"
     },

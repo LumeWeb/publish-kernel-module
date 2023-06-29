@@ -16,7 +16,7 @@
                 "publish-kernel-module": "lib/index.js"
             },
             "devDependencies": {
-                "@lumeweb/node-library-preset": "git+https://git.lumeweb.com/LumeWeb/node-library-preset.git",
+                "@lumeweb/node-library-preset": "^0.2.6",
                 "@types/prompts": "^2.4.4",
                 "presetter": "*"
             }
@@ -1936,8 +1936,8 @@
             }
         },
         "node_modules/@lumeweb/node-library-preset": {
-            "version": "0.1.0",
-            "resolved": "git+https://git.lumeweb.com/LumeWeb/node-library-preset.git#05b030c9ca15eb17e72080ad03f71f7203429187",
+            "version": "0.2.6",
+            "resolved": "git+https://git.lumeweb.com/LumeWeb/node-library-preset.git#e73f5f5d10668404c73e336a2cb76d76e77a9cb4",
             "dependencies": {
                 "@semantic-release/changelog": "^6.0.3",
                 "@semantic-release/git": "^10.0.1",
