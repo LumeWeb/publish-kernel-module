@@ -19,6 +19,7 @@ import { wordlist } from "@scure/bip39/wordlists/english";
 import { HDKey } from "ed25519-keygen/hdkey";
 
 import {
+  BOOTSTRAP_NODES,
   CID_HASH_TYPES,
   CID_TYPES,
   createKeyPair,
@@ -136,10 +137,7 @@ let config = {
   db,
   p2p: {
     peers: {
-      initial: [
-        //  ...BOOTSTRAP_NODES,
-        "ws://z2DX2geLzZnff444mUFXZj7F3J2PA4SbRbfUiPwofk8Umix@127.0.0.1:5050/s5/p2p",
-      ],
+      initial: [...BOOTSTRAP_NODES],
     },
   },
   logger: {
