@@ -189,7 +189,7 @@ await peerDefer.promise;
     util.format(
       "%s: %s",
       chalk.green("Resolver entry"),
-      encodeCid(cidBytes, 0, CID_TYPES.RESOLVER, CID_HASH_TYPES.ED25519),
+      encodeCid(sre.pk, 0, CID_TYPES.RESOLVER, CID_HASH_TYPES.ED25519),
     ),
   );
   await node.stop();
