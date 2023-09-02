@@ -1,3 +1,10 @@
+# [0.1.0-develop.13](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.12...v0.1.0-develop.13) (2023-09-02)
+
+
+### Bug Fixes
+
+* restore bootstrap nodes list ([b7caaa0](https://git.lumeweb.com/LumeWeb/publish-kernel-module/commit/b7caaa09da49dd5a3793711ca5ad24878c9502d8))
+
 # [0.1.0-develop.12](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.11...v0.1.0-develop.12) (2023-09-02)
 
 
