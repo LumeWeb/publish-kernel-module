@@ -1,3 +1,10 @@
+# [0.1.0-develop.14](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.13...v0.1.0-develop.14) (2023-09-02)
+
+
+### Bug Fixes
+
+* need to use the sre.pk not cidBytes ([c65a212](https://git.lumeweb.com/LumeWeb/publish-kernel-module/commit/c65a212e567e6a9695b9525db70cd09256342293))
+
 # [0.1.0-develop.13](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.12...v0.1.0-develop.13) (2023-09-02)
 
 
