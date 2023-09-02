@@ -24,8 +24,12 @@
         "lib/**"
     ],
     "dependencies": {
-        "@lumeweb/libweb": "0.2.0-develop.29",
+        "@lumeweb/libweb": "0.2.0-develop.36",
+        "@scure/bip39": "^1.2.1",
         "chalk": "^5.2.0",
+        "ed25519-keygen": "^0.4.8",
+        "memory-level": "^1.0.0",
+        "p-defer": "^4.0.0",
         "prompts": "^2.4.2"
     },
     "bin": "./lib/index.js"
