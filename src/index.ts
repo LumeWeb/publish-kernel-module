@@ -6,6 +6,7 @@ import fs from "fs/promises";
 import path from "path";
 import {
   concatBytes,
+  equalBytes,
   hexToBytes,
   maybeInitDefaultPortals,
   setActivePortalMasterKey,
@@ -27,6 +28,7 @@ import {
   Logger,
   REGISTRY_TYPES,
   S5NodeConfig,
+  SignedRegistryEntry,
 } from "@lumeweb/libs5";
 
 import { MemoryLevel } from "memory-level";
@@ -162,6 +164,7 @@ await peerDefer.promise;
   const key = hdKey as HDKey;
 
   let revision = 0;
+  let sre: SignedRegistryEntry;
 
   const ret = await node.services.registry.get(
     new KeyPairEd25519(key.privateKey).publicKey,
@@ -170,20 +173,27 @@ await peerDefer.promise;
   if (ret) {
     revision = ret.revision + 1;
   }
-  const sre = node.services.registry.signRegistryEntry({
-    kp: new KeyPairEd25519((hdKey as HDKey).privateKey),
-    data: concatBytes(
-      Uint8Array.from([
-        REGISTRY_TYPES.CID,
-        CID_TYPES.RESOLVER,
-        CID_HASH_TYPES.BLAKE3,
-      ]),
-      cidBytes,
-    ),
-    revision,
-  });
 
-  await node.services.registry.set(sre);
+  const newEntry = concatBytes(
+    Uint8Array.from([
+      REGISTRY_TYPES.CID,
+      CID_TYPES.RESOLVER,
+      CID_HASH_TYPES.BLAKE3,
+    ]),
+    cidBytes,
+  );
+
+  if (!equalBytes(ret?.data ?? new Uint8Array(), newEntry)) {
+    sre = node.services.registry.signRegistryEntry({
+      kp: new KeyPairEd25519((hdKey as HDKey).privateKey),
+      data: newEntry,
+      revision,
+    });
+
+    await node.services.registry.set(sre);
+  } else {
+    sre = ret as SignedRegistryEntry;
+  }
 
   console.log(
     util.format(
