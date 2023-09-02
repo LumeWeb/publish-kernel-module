@@ -1,6 +1,6 @@
 {
     "name": "@lumeweb/publish-kernel-module",
-    "version": "0.1.0-develop.14",
+    "version": "0.1.0-develop.15",
     "type": "module",
     "repository": {
         "type": "git",

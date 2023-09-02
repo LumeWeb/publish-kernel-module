@@ -1,3 +1,10 @@
+# [0.1.0-develop.15](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.14...v0.1.0-develop.15) (2023-09-02)
+
+
+### Bug Fixes
+
+* only submit a new registry entry if the data has changed ([39b0117](https://git.lumeweb.com/LumeWeb/publish-kernel-module/commit/39b0117e4f02550c9ac7b58961e83b2e82757b41))
+
 # [0.1.0-develop.14](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.13...v0.1.0-develop.14) (2023-09-02)
 
 
