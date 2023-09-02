@@ -51,6 +51,9 @@ if (!key) {
 }
 
 let seed = process.env.MODULE_SEED;
+if (["0", "false"].includes(seed as string)) {
+  seed = false as any;
+}
 if (!seed && seed === undefined) {
   // @ts-ignore
   seed = await prompts.prompts.password({
