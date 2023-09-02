@@ -1,3 +1,10 @@
+# [0.1.0-develop.12](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.11...v0.1.0-develop.12) (2023-09-02)
+
+
+### Features
+
+* add support for creating a resolver CID for the module if MODULE_SEED is not false ([fd2ff5c](https://git.lumeweb.com/LumeWeb/publish-kernel-module/commit/fd2ff5c556c0823ec4d7d91d31146f812f8d508a))
+
 # [0.1.0-develop.11](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.10...v0.1.0-develop.11) (2023-08-10)
 
 # [0.1.0-develop.10](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.9...v0.1.0-develop.10) (2023-08-10)
