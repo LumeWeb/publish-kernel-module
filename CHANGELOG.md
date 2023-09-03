@@ -1,3 +1,10 @@
+# [0.1.0-develop.17](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.16...v0.1.0-develop.17) (2023-09-03)
+
+
+### Bug Fixes
+
+* need to slice out the key type byte ([7d0d1b9](https://git.lumeweb.com/LumeWeb/publish-kernel-module/commit/7d0d1b9b2bec62d369a255cb3a7545febfb4ad56))
+
 # [0.1.0-develop.16](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.15...v0.1.0-develop.16) (2023-09-02)
 
 
