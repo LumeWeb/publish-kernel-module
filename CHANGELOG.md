@@ -1,3 +1,10 @@
+# [0.1.0-develop.16](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.15...v0.1.0-develop.16) (2023-09-02)
+
+
+### Bug Fixes
+
+* if seed is false or 0 as a string, set it to false ([bdbb090](https://git.lumeweb.com/LumeWeb/publish-kernel-module/commit/bdbb090c7d2764d178f2578c8a1eb792e0a180e9))
+
 # [0.1.0-develop.15](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.14...v0.1.0-develop.15) (2023-09-02)
 
 
