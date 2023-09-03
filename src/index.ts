@@ -35,7 +35,7 @@ import { MemoryLevel } from "memory-level";
 import { base58btc } from "multiformats/bases/base58";
 import KeyPairEd25519 from "@lumeweb/libs5/lib/ed25519.js";
 import defer from "p-defer";
-import { encodeCid } from "@lumeweb/libportal";
+import { decodeCid, encodeCid } from "@lumeweb/libportal";
 
 const BIP44_PATH = "m/44'/1627'/0'/0'/0'";
 
@@ -163,7 +163,7 @@ node.services.p2p.once("peerConnected", peerDefer.resolve);
 
 await peerDefer.promise;
 {
-  const cidBytes = base58btc.decode(cid);
+  const cidBytes = decodeCid(cid);
   const key = hdKey as HDKey;
 
   let revision = 0;
@@ -183,7 +183,7 @@ await peerDefer.promise;
       CID_TYPES.RESOLVER,
       CID_HASH_TYPES.BLAKE3,
     ]),
-    cidBytes,
+    cidBytes.hash,
   );
 
   if (!equalBytes(ret?.data ?? new Uint8Array(), newEntry)) {
