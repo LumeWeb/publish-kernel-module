@@ -1,12 +1,12 @@
 {
     "name": "@lumeweb/publish-kernel-module",
-    "version": "0.1.0-develop.18",
+    "version": "0.1.0-develop.19",
     "lockfileVersion": 3,
     "requires": true,
     "packages": {
         "": {
             "name": "@lumeweb/publish-kernel-module",
-            "version": "0.1.0-develop.18",
+            "version": "0.1.0-develop.19",
             "dependencies": {
                 "@lumeweb/libweb": "0.2.0-develop.48",
                 "@scure/bip39": "^1.2.1",
