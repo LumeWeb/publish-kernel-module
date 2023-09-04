@@ -8,7 +8,7 @@
             "name": "@lumeweb/publish-kernel-module",
             "version": "0.1.0-develop.16",
             "dependencies": {
-                "@lumeweb/libweb": "0.2.0-develop.44",
+                "@lumeweb/libweb": "0.2.0-develop.48",
                 "@scure/bip39": "^1.2.1",
                 "chalk": "^5.2.0",
                 "ed25519-keygen": "^0.4.8",
@@ -1951,9 +1951,9 @@
             }
         },
         "node_modules/@lumeweb/libweb": {
-            "version": "0.2.0-develop.44",
-            "resolved": "https://registry.npmjs.org/@lumeweb/libweb/-/libweb-0.2.0-develop.44.tgz",
-            "integrity": "sha512-xJea4vLPM+6TqvOsLJCEKDq0PZGbCUR2gh3pDvXMjRJfj4HDz5NuxBdz0DRJ2kqa6whz8jHILLrmT6he9cKHWA==",
+            "version": "0.2.0-develop.48",
+            "resolved": "https://registry.npmjs.org/@lumeweb/libweb/-/libweb-0.2.0-develop.48.tgz",
+            "integrity": "sha512-4hznd3BrYW+YFLJ8BgGDVrJuexQnKfRRlLPM+KYDFsDwu4lhoGUDonVt0gk5KBAVlUp4x6XJxXc82aYn4rhECQ==",
             "dependencies": {
                 "@lumeweb/community-portals": "^0.1.0-develop.6",
                 "@lumeweb/libportal": "0.2.0-develop.23",
