@@ -5,7 +5,8 @@ import * as process from "process";
 import fs from "fs/promises";
 import path from "path";
 import {
-  concatBytes,
+  encodeRegistryCid,
+  encodeRegistryValue,
   equalBytes,
   hexToBytes,
   maybeInitDefaultPortals,
@@ -21,18 +22,13 @@ import { HDKey } from "ed25519-keygen/hdkey";
 
 import {
   BOOTSTRAP_NODES,
-  CID_HASH_TYPES,
-  CID_TYPES,
   createKeyPair,
   createNode,
-  Logger,
-  REGISTRY_TYPES,
   S5NodeConfig,
   SignedRegistryEntry,
 } from "@lumeweb/libs5";
 
 import { MemoryLevel } from "memory-level";
-import { base58btc } from "multiformats/bases/base58";
 import KeyPairEd25519 from "@lumeweb/libs5/lib/ed25519.js";
 import defer from "p-defer";
 import { decodeCid, encodeCid } from "@lumeweb/libportal";
@@ -163,7 +159,6 @@ node.services.p2p.once("peerConnected", peerDefer.resolve);
 
 await peerDefer.promise;
 {
-  const cidBytes = decodeCid(cid);
   const key = hdKey as HDKey;
 
   let revision = 0;
@@ -177,14 +172,11 @@ await peerDefer.promise;
     revision = ret.revision + 1;
   }
 
-  const newEntry = concatBytes(
-    Uint8Array.from([
-      REGISTRY_TYPES.CID,
-      CID_TYPES.RESOLVER,
-      CID_HASH_TYPES.BLAKE3,
-    ]),
-    cidBytes.hash,
-  );
+  let [newEntry, err] = encodeRegistryValue(cid);
+
+  if (err) {
+    throw new Error(err);
+  }
 
   if (!equalBytes(ret?.data ?? new Uint8Array(), newEntry)) {
     sre = node.services.registry.signRegistryEntry({
@@ -198,12 +190,15 @@ await peerDefer.promise;
     sre = ret as SignedRegistryEntry;
   }
 
+  let resolverCid;
+  [resolverCid, err] = encodeRegistryCid(sre.pk);
+
+  if (err) {
+    throw new Error(err);
+  }
+
   console.log(
-    util.format(
-      "%s: %s",
-      chalk.green("Resolver entry"),
-      encodeCid(sre.pk.slice(1), 0, CID_TYPES.RESOLVER, CID_HASH_TYPES.ED25519),
-    ),
+    util.format("%s: %s", chalk.green("Resolver entry"), resolverCid),
   );
   await node.stop();
 }
