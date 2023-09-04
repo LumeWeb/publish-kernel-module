@@ -31,7 +31,6 @@ import {
 import { MemoryLevel } from "memory-level";
 import KeyPairEd25519 from "@lumeweb/libs5/lib/ed25519.js";
 import defer from "p-defer";
-import { decodeCid, encodeCid } from "@lumeweb/libportal";
 
 const BIP44_PATH = "m/44'/1627'/0'/0'/0'";
 
