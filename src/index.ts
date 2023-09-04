@@ -50,12 +50,15 @@ if (["0", "false"].includes(seed as string)) {
   seed = false as any;
 }
 if (!seed && seed === undefined) {
-  // @ts-ignore
-  seed = await prompts.prompts.password({
-    name: "module_seed",
-    message: "Enter your module seed",
-    validate: (prev) => prev && bip39.validateMnemonic(prev, wordlist),
-  });
+  const seedFile = path.join(process.cwd(), ".module-seed");
+  if (await fileExists(seedFile)) {
+    seed = await fs.readFile(seedFile, "utf8");
+  }
+
+  if (!seed) {
+    seed = bip39.generateMnemonic(wordlist);
+    await fs.writeFile(seedFile, seed);
+  }
 }
 
 const hdKey = seed
