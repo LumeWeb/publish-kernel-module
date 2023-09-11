@@ -5,8 +5,6 @@ import * as process from "process";
 import fs from "fs/promises";
 import path from "path";
 import {
-  encodeRegistryCid,
-  encodeRegistryValue,
   equalBytes,
   hexToBytes,
   maybeInitDefaultPortals,
@@ -22,6 +20,7 @@ import { HDKey } from "ed25519-keygen/hdkey";
 
 import {
   BOOTSTRAP_NODES,
+  CID,
   createKeyPair,
   createNode,
   S5NodeConfig,
@@ -108,13 +107,16 @@ maybeInitDefaultPortals();
 
 const fd = await fs.open(file as string);
 
-const [cid, err] = await uploadObject(
-  fd.createReadStream(),
-  BigInt((await fd.stat()).size),
-);
+let cid;
 
-if (err) {
-  console.error("Failed to publish: ", err);
+try {
+  cid = await uploadObject(
+    fd.createReadStream(),
+    BigInt((await fd.stat()).size),
+  );
+} catch (e) {
+  console.error("Failed to publish: ", e.message);
+  process.exit();
 }
 
 console.log(
@@ -174,10 +176,12 @@ await peerDefer.promise;
     revision = ret.revision + 1;
   }
 
-  let [newEntry, err] = encodeRegistryValue(cid);
-
-  if (err) {
-    throw new Error(err);
+  let newEntry;
+  try {
+    newEntry = CID.decode(cid).toRegistryEntry();
+  } catch (e) {
+    console.error("Failed to publish: ", e.message);
+    process.exit();
   }
 
   if (!equalBytes(ret?.data ?? new Uint8Array(), newEntry)) {
@@ -193,10 +197,12 @@ await peerDefer.promise;
   }
 
   let resolverCid;
-  [resolverCid, err] = encodeRegistryCid(sre.pk);
 
-  if (err) {
-    throw new Error(err);
+  try {
+    resolverCid = CID.fromRegistryPublicKey(sre.pk);
+  } catch (e) {
+    console.error("Failed to publish: ", e.message);
+    process.exit();
   }
 
   console.log(
