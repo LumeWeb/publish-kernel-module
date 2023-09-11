@@ -199,7 +199,7 @@ await peerDefer.promise;
   let resolverCid;
 
   try {
-    resolverCid = CID.fromRegistryPublicKey(sre.pk);
+    resolverCid = CID.fromRegistryPublicKey(sre.pk).toString();
   } catch (e) {
     console.error("Failed to publish: ", e.message);
     process.exit();
