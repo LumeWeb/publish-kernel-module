@@ -1,3 +1,10 @@
+# [0.1.0-develop.21](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.20...v0.1.0-develop.21) (2023-09-11)
+
+
+### Bug Fixes
+
+* resolverCid needs to be in string format ([a3cc5c1](https://git.lumeweb.com/LumeWeb/publish-kernel-module/commit/a3cc5c1c71c6665d1b0af165b0e4395058a60ff0))
+
 # [0.1.0-develop.20](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.19...v0.1.0-develop.20) (2023-09-11)
 
 # [0.1.0-develop.19](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.18...v0.1.0-develop.19) (2023-09-04)
