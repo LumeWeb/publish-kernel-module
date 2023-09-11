@@ -107,7 +107,7 @@ maybeInitDefaultPortals();
 
 const fd = await fs.open(file as string);
 
-let cid;
+let cid: CID;
 
 try {
   cid = await uploadObject(
@@ -178,7 +178,7 @@ await peerDefer.promise;
 
   let newEntry;
   try {
-    newEntry = CID.decode(cid).toRegistryEntry();
+    newEntry = cid.toRegistryEntry();
   } catch (e) {
     console.error("Failed to publish: ", e.message);
     process.exit();
