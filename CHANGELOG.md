@@ -1,3 +1,10 @@
+# [0.1.0-develop.22](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.21...v0.1.0-develop.22) (2023-09-11)
+
+
+### Bug Fixes
+
+* cid is a CID instance already ([5227acb](https://git.lumeweb.com/LumeWeb/publish-kernel-module/commit/5227acb2876f97ccf041bfe6f4c63622294b003e))
+
 # [0.1.0-develop.21](https://git.lumeweb.com/LumeWeb/publish-kernel-module/compare/v0.1.0-develop.20...v0.1.0-develop.21) (2023-09-11)
 
 
